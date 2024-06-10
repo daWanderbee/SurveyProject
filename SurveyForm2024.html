@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ArtnLife </title>
+  </head>
+  <body>
+    <h1 id="title">Art and Life</h1>
+    <p id="description"> Delving into the daily dance of art and life.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"> Enter your name: <input type="text" id="name" placeholder="Enter your full name..." required ></label>
+        <label for="email" id="email-label"> Enter your Email: <input type="email" id="email" placeholder="example@mail.com" required></label>
+        <label for="number" id="number-label">Enter your phone(optional): <input type="number" id="number" min=0000000000 max=9999999999 placeholder="xxxxxxxxxx" ></label>
+        <label for="dropdown">Field of work: 
+          <select id="dropdown" required>
+            <option>(Select one!)</option>
+            <option>Biomedicals</option>
+            <option>Engineering</option>
+            <option>Arts and Humanities</option>
+            <option>Marketing and Management</option>
+            <option>Student</option>
+            </select></label>
+      </fieldset>
+      <fieldset>
+      <legend>Do you agree students should have at least one hobby in arts?</legend>
+      <label for="Strongly Agree" class="inline"><input type="radio" id="Strongly Agree" name="agreement" value="Strongly Agree" class="radio-input">Strongly Agree</label>
+      <label for="Agree" class="inline"><input type="radio" id="Agree" name="agreement" selected value="Agree" class="radio-input">Agree</label>
+      <label class="inline"for="Disagree"><input type="radio" id="Disagree" name="agreement" value="Disagree" class="radio-input">Disagree</label>
+      <label for="Strongly Disagree" class="inline"><input type="radio" id="Strongly Disagree" name="agreement" value="Strongly Disagree" class="radio-input">Strongly Disagree</label>
+      </fieldset>
+      <fieldset>
+        <legend>What art forms do you like?</legend>
+        <lable for="singing" class="block"><input type="checkbox" id="singing" value="sing"> Singing</lable>
+        <lable for="dancing" class="block"><input type="checkbox" id="dancing" value="dance" > Dancing</lable>
+        <lable  for="drawing"class="block"><input type="checkbox" id="drawing" value="draw" > Drawing</lable>
+        <lable for="origami" class="block"><input type="checkbox" id="origami" value="orig"> Origami</lable>
+        <lable for="instruments" class="block"><input type="checkbox" id="instruments" value="instrument" > Instruments</lable>
+      </fieldset>
+      <fieldset>
+        <lable for="comments" class="blocks" >Any other comments? 
+          <textarea rows=4 cols=30 placeholder="Comments...">
+            </textarea></lable></fieldset>
+          <input type="submit" id="submit">
+    </form>
+  </body>
+</html>
